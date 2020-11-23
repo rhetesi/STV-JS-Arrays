@@ -30,8 +30,6 @@ const objectForArrayMethods = {};
 const arrayForArrayMethods = [100, 150, 234, 'valami', 515, 627, false];
 let valueA = 234, valueB = 'valaki';
 
-// Ajjaj, eltértem a feladattól, mert 3 paramétert adok át
-// Így viszont újrafelhasználható a függvény
 const arrayMethods = (object, arr, prim) => {
    object.exists = arr.some(item => item === prim);
    object.index = arr.findIndex(item => item === prim);
