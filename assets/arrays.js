@@ -5,6 +5,12 @@
 A függvény szorozza meg tömbelemek értékét 1.27-el, majd pedig térjen vissza az elemek összegével!
 */
 
+const intArray = [100, 150, 234, 515, 627];
+
+/*const taxedArray = intArray.map(item => item * 1.27);
+console.log(taxedArray);
+const taxedSum = taxedArray.reduce((previous, current) => previous + current);
+console.log(taxedSum);*/
 
 
 
