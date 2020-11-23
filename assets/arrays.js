@@ -13,7 +13,7 @@ const taxedSum = taxedArray.reduce((previous, current) => previous + current);
 console.log(taxedSum);*/
 
 const sumWithVAT = intArray.map(item => item * 1.27).reduce((prev, curr) => prev + curr);
-console.log(sumWithVAT);
+console.log('1. feladat - tömb eleminek szorzása meagadott értékkel és a szorzatok összeadása: ' + sumWithVAT);
 
 
 /*
@@ -25,6 +25,39 @@ allElementIsANumber: Értéke true/false attól függően, hogy a tömb minden e
 someElementIsANumber: Értéke true/false attól függően, hogy a tömbben van e number típusú elem vagy sem
 */
 
+
+
+/*
+const arrMethod = [100, 150, 234, 'valami', 515, 627];
+const valueA = 150, valueB = 'valaki';
+
+// find()
+const findResultA = intArray.find(item => item === valueA);
+//console.log(findResultA);
+const findResultB = intArray.find(item => item === valueB);
+//console.log(findResultB);
+
+
+// findIndex()
+const findIResultA = intArray.findIndex(item => item === valueA);
+//console.log(findIResultA);
+const findIResultB = intArray.findIndex(item => item === valueB);
+//console.log(findIResultB);
+
+
+// every()
+const everyResultA = intArray.every(item => item === valueA);
+//console.log(everyResultA);
+const everyResultB = intArray.every(item => item === valueB);
+//console.log(everyResultB);
+
+
+// some()
+const someResultA = intArray.some(item => item === valueA);
+//console.log(someResultA);
+const someResultB = intArray.some(item => item === valueB);
+//console.log(someResultB);
+*/
 
 
 /* 3. Írj egy olyan függvénykifejezést, ami paraméterként egy stringeket tartalmazó tömböt kap  (Input ellenőrzést nem kell végezni.), és visszaad egy html template-et (string)! A html template egy felsorolt lista, aminek a listaelemei a kapott tömb értékeit tartalmazzák.
