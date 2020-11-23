@@ -104,7 +104,7 @@ const content = ['első', 'második', 'harmadik'];
     <li>harmadik</li>
 </ul> */
 
-const stringArray = ['első', 'második', 'hamadik'];
+const content = ['első', 'második', 'hamadik'];
 let list = '';
 
 const htmlList = (arr) => {
@@ -113,7 +113,7 @@ const htmlList = (arr) => {
     return list;
 }
 
-console.log(htmlList(stringArray));
+console.log(htmlList(content));
 
 //const HTMLList = '<ul>' + stringArray.map(item => '<li>' + item + '</li>') + '</ul>';
 //const listItem = stringArray.map(item => '<li>' + item + '</li>');
