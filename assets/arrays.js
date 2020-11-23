@@ -27,7 +27,23 @@ someElementIsANumber: Értéke true/false attól függően, hogy a tömbben van 
 
 
 
-/*
+/* 2nd run (with some development, and rather 22nd than 2nd :) )
+const arrMethod = [100, 150, 234, 'valami', 515, 627];
+const valueA = 150, valueB = 'valaki';
+
+const exists = (arr, prim) => arr.some(item => item === prim);
+const index = (arr, prim) => arr.findIndex(item => item === prim);
+const allIsNum = (arr) => arr.every(item => item === typeof('number'));
+const someNum = (arr) => arr.some(item => item !== isNaN);
+
+console.log(exists(arrMethod, valueA));
+console.log(index(arrMethod, valueA));
+console.log(index(arrMethod, valueB));
+console.log(allIsNum(arrMethod, valueA));
+console.log(someNum(arrMethod, valueA));
+*/
+
+/* 1. nekifutás (már ez is egy átírt változat, ÍGY JÁR, AKI CODEPEN-t használ.)
 const arrMethod = [100, 150, 234, 'valami', 515, 627];
 const valueA = 150, valueB = 'valaki';
 
