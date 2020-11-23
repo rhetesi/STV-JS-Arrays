@@ -25,7 +25,24 @@ allElementIsANumber: Értéke true/false attól függően, hogy a tömb minden e
 someElementIsANumber: Értéke true/false attól függően, hogy a tömbben van e number típusú elem vagy sem
 */
 
+// Final run (maybe sprint?), it works properly.
+const objectForArrayMethods = {};
+const arrayForArrayMethods = [100, 150, 234, 'valami', 515, 627, false];
+let valueA = 234, valueB = 'valaki';
 
+// Ajjaj, eltértem a feladattól, mert 3 paramétert adok át
+// Így viszont újrafelhasználható a függvény
+const arrayMethods = (object, arr, prim) => {
+   object.exists = arr.some(item => item === prim);
+   object.index = arr.findIndex(item => item === prim);
+   object.allElementIsANumber = arr.every(item => item === typeof('number'));
+   object.someElementIsANumber = arr.some(item => item !== isNaN);
+   
+   return object;
+}
+
+console.log(arrayMethods(objectForArrayMethods, arrayForArrayMethods, valueA));
+console.log(arrayMethods(objectForArrayMethods, arrayForArrayMethods, valueB));
 
 /* 2nd run (with some development, and rather 22nd than 2nd :) )
 const arrMethod = [100, 150, 234, 'valami', 515, 627];
