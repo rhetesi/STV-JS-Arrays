@@ -12,6 +12,8 @@ console.log(taxedArray);
 const taxedSum = taxedArray.reduce((previous, current) => previous + current);
 console.log(taxedSum);*/
 
+const sumWithVAT = intArray.map(item => item * 1.27).reduce((prev, curr) => prev + curr);
+console.log(sumWithVAT);
 
 
 /*
