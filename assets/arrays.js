@@ -108,8 +108,8 @@ const stringArray = ['első', 'második', 'hamadik'];
 let list = '';
 
 const htmlList = (arr) => {
-    const tempList = '<ul>,' + arr.map(item => '<li>' + item + '</li>') + ',</ul>';
-    list = tempList.replaceAll(',','');
+    const tempList = '<ul>,' + arr.map(item => '  <li>' + item + '</li>') + ',</ul>'; // 2 szóköz az indentáláshoz a nyitó <li> előtt
+    list = tempList.replaceAll(',','\r\n'); // Vesszők helyett a CRLF vezérlőkarakterek
     return list;
 }
 
