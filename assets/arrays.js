@@ -103,3 +103,10 @@ const content = ['első', 'második', 'harmadik'];
     <li>második</li>
     <li>harmadik</li>
 </ul> */
+
+const stringArray = ['első', 'második', 'hamadik'];
+
+//const HTMLList = '<ul>' + stringArray.map(item => '<li>' + item + '</li>') + '</ul>';
+//const listItem = stringArray.map(item => '<li>' + item + '</li>');
+//const HTMLList = listItem.replace(',', '');
+//console.log(HTMLList);
