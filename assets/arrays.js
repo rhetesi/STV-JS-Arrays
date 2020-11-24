@@ -25,6 +25,7 @@ allElementIsANumber: Értéke true/false attól függően, hogy a tömb minden e
 someElementIsANumber: Értéke true/false attól függően, hogy a tömbben van e number típusú elem vagy sem
 */
 
+
 // Final run (maybe sprint?), it works properly.
 const objectForArrayMethods = {};
 const arrayForArrayMethods = [100, 150, 234, 'valami', 515, 627, false];
@@ -41,6 +42,8 @@ const arrayMethods = (object, arr, prim) => {
 
 console.log(arrayMethods(objectForArrayMethods, arrayForArrayMethods, valueA));
 console.log(arrayMethods(objectForArrayMethods, arrayForArrayMethods, valueB));
+
+
 
 /* 2nd run (with some development, and rather 22nd than 2nd :) )
 const arrMethod = [100, 150, 234, 'valami', 515, 627];
@@ -110,6 +113,8 @@ let list = '';
 const htmlList = (arr) => {
     const tempList = '<ul>,' + arr.map(item => '  <li>' + item + '</li>') + ',</ul>'; // 2 szóköz az indentáláshoz a nyitó <li> előtt
     list = tempList.replaceAll(',','\r\n'); // Vesszők helyett a CRLF vezérlőkarakterek
+    return list;
+    
     return list;
 }
 
